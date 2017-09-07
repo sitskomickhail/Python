@@ -1,0 +1,3 @@
+name = str(input()) #input the word (desirable names)
+
+print('Hello, '+ name + '!') #printing the line
