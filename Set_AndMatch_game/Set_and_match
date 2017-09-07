@@ -1,0 +1,66 @@
+#Game 'Set & match'
+from random import *
+ 
+print('Привет, это игра "Угадай число!"')
+print('Я загодал число от 1 до 100')
+print('Попробуй угадай что это за число')
+print('У вас есть 10 попыток')
+ 
+#main
+ 
+#computer set a random number
+q = ''
+tries = 10
+while q != 'no':
+    num = randint(1, 101)
+    #print(num)
+ 
+    #module for player
+ 
+ 
+ 
+    while True:
+ 
+        while 1:
+            ans = input('Введите число: ')
+            try:
+                ans = int(ans)
+                break
+            except ValueError:
+                print('Это не число: ')
+                tries -= 1
+                print('Осталось', tries,'попыток!')
+         
+        if ans < 0 or ans > 100:
+            print('Введено неверное число!')
+            continue
+        if str() == str(int()):
+            print("Введено не число")
+            continue
+        else:
+            if num > ans:
+                print('Нет, моё число больше')
+                tries -= 1
+            elif num < ans:
+                print('Нет, моё число меньше')
+                tries -= 1
+            else:
+                print('Дa, ', num,'это мое число!')
+                break
+            print('Осталось', tries,'попыток!')
+            if tries == 0:
+                print('Вы прогирали!')
+                break
+             
+    print('Использовано', 10 - tries, 'попыток')
+     
+    q = input('Сыграем ещё? (yes/no): ')
+    while q !='yes':
+        print('Введите yes или no')
+        if q == "no":
+            break
+             
+        q = input('Сыграем ещё? (yes/no) : ')
+        continue
+           
+input('Aга было круто!')
