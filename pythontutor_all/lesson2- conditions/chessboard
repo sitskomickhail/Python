@@ -1,0 +1,9 @@
+stolb1 = int(input())
+stroka1 = int(input())
+stolb2 = int(input())
+stroka2 = int(input())
+
+if (stolb1 + stroka1) % 2 == (stolb2 + stroka2) % 2:
+    print("YES")
+else:
+    print("NO")
