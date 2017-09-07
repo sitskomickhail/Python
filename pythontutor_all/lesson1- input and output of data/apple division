@@ -1,0 +1,5 @@
+n = int(input()) #Enter two numbers (num1 & num2)
+k = int(input())
+
+print(k // n) #print the number how much pupils will have apples
+print(k % n) #print the number how much apples will remain
