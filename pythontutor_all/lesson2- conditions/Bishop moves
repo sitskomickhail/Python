@@ -1,0 +1,9 @@
+step_1 = int(input()) #Entering 4 number(first 2 - position of bishop, and the second - where he must to come)
+step_2 = int(input())
+step_3 = int(input())
+step_4 = int(input())
+
+if (step_1 == step_3) or (step_2 == step_4): #compare to the equality of cells, if they are equal, then it means that the bishop can move, if not, it can not
+    print("YES")
+else:
+    print("NO")
