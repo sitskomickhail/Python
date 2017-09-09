@@ -1,0 +1,26 @@
+#Task:
+#Шахматный ферзь ходит по диагонали, горизонтали или вертикали.
+#Даны две различные клетки шахматной доски, определите, 
+#может ли ферзь попасть с первой клетки на вторую одним ходом.
+
+#Answer:
+
+a = int(input())
+b = int(input())
+
+c = int(input())
+d = int(input())
+
+d_x = a - c;
+d_y = b - d;
+
+if d_x != 0 and d_y != 0:
+    if d_x == d_y or d_x == -d_y:
+        print("YES")
+        
+    else:
+        print("NO")
+elif d_x != 0 or d_y != 0:
+    print("YES")
+else:
+    print("NO")
