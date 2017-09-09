@@ -1,0 +1,9 @@
+a = int(input()) #Enter positions
+b = int(input())
+c = int(input())
+d = int(input())
+
+if abs(c-a) <= 1 and abs(d-b) <= 1: #equaling squares and king position
+    print("YES")
+else:
+    print("NO")
