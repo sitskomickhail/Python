@@ -1,0 +1,7 @@
+#Task:
+#Дано натуральное число. Выведите его последнюю цифру.
+
+#Answer
+num = int(input())
+num1 = int(num // 10)
+print(num - num1 * 10)
