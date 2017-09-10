@@ -1,0 +1,7 @@
+sum = 0
+col = int(input())
+
+for i in range(col):
+    num = int(input())
+    sum += num
+print(sum)
