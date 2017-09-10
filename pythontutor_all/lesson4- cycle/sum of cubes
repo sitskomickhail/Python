@@ -1,0 +1,10 @@
+#Task:
+#По данному натуральному n вычислите сумму 13+23+33+...+n3.
+
+
+#Answer:
+num = int(input())
+prov = 0
+for i in range (num + 1):
+    prov += (i * i * i) 
+print(prov)
