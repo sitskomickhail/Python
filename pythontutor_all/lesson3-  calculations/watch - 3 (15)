@@ -1,0 +1,20 @@
+#Task:
+#С начала суток часовая стрелка повернулась на угол в α градусов. 
+#Определите сколько полных часов, минут и секунд прошло с начала суток, то есть решите задачу, обратную задаче «Часы - 1». 
+#Запишите ответ в три переменные и выведите их на экран.
+
+
+#Answer:
+from  math import *
+deg = float(input())
+
+hour = 30
+minute = hour/60
+second = minute/60
+ 
+h = deg//hour
+m = (deg % hour) // minute
+s = (deg % hour ) % minute // second
+
+
+print(round(h), round(m), round(s))
