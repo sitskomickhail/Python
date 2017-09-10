@@ -1,0 +1,17 @@
+#Task:
+#Дано трехзначное число. Найдите сумму его цифр.
+
+
+#Answer:
+from math import *
+num = float(input())
+num1 = num / 10
+num1 -= floor(num1)
+#print(round(num1 * 10))
+num2 = num / 100
+num3 = num2
+num2 -= floor(num2)
+#print(floor(num2 * 10))
+#print(floor(num3))
+sum = round(num1 * 10) + floor(num2 * 10) + floor(num3)
+print(sum)
