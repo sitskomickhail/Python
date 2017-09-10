@@ -1,0 +1,14 @@
+#Task:
+#Дано натуральное число. Найдите число десятков в его десятичной записи.
+
+
+#Answer:
+from math import *
+num = float(input())
+point = num / 100
+num = 0
+num = point * 10
+
+num = round(point, 2) - round(floor(point))
+
+print (floor(num * 10))
