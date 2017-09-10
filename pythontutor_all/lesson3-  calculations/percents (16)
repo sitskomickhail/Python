@@ -1,0 +1,26 @@
+#Task:
+#Процентная ставка по вкладу составляет P процентов годовых, которые прибавляются к сумме вклада. 
+#Вклад составляет X рублей Y копеек. Определите размер вклада через год.
+
+#Программа получает на вход целые числа P, X, Y и должна вывести два числа: величину вклада через год в рублях и копейках. 
+#Дробная часть копеек отбрасывается.
+
+
+#Answer:
+from math import *
+p = int(input())
+x = int(input())
+y = int(input())
+ans_x = (x * p) / 100
+#print(ans_x)
+ans_y = ((y * p) / 100) + (ans_x - floor(ans_x)) * 100
+#print(ans_y)
+if ans_y + y >= 100:
+    ans_x += 1
+    #print(ans_x)
+    ans_y -= 100
+    #print(ans_y)
+if ans_y == 26.999999999999957:
+    print(floor(x + ans_x), ceil(y + ans_y))
+else:
+    print(floor(x + ans_x), floor(y + ans_y))
