@@ -1,0 +1,13 @@
+#Task:
+#По данному натуральному n ≤ 9 выведите лесенку из n ступенек, i-я ступенька состоит из чисел от 1 до i без пробелов.
+
+
+#Answer:
+kol = int(input())
+nums = 0
+help = 1
+print(1)
+for i in range (1, kol):
+    nums = help * 10 + (i + 1)
+    print(nums)
+    help = nums
