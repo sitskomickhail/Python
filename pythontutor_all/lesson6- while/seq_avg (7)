@@ -1,0 +1,9 @@
+col = 0
+out = 0
+while True:
+    num = int(input())
+    if num == 0:
+        break
+    out += num
+    col += 1
+print(out / col)
