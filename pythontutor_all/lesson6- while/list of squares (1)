@@ -1,0 +1,13 @@
+#Task:
+#По данному целому числу N распечатайте все квадраты натуральных чисел, не превосходящие N, в порядке возрастания.
+
+#Answer:
+num = int(input())
+init = 1
+pro = 1
+while init <= num:
+    pro = init**2
+    init += 1
+    if num < pro:
+        break
+    print (pro)
