@@ -1,0 +1,12 @@
+#Task:
+#Дано целое число, не меньшее 2. Выведите его наименьший натуральный делитель, отличный от 1.
+
+#Answer:
+num = int(input())
+init = 2
+deli = 0
+while init <= num:
+    if num % init == 0:
+        print(init)
+        break
+    init += 1
