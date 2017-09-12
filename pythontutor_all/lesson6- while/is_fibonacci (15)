@@ -1,0 +1,23 @@
+#Task:
+#Дано натуральное число A. Определите, каким по счету числом Фибоначчи оно является, то есть выведите такое число n, что φn = A. 
+#Если А не является числом Фибоначчи, выведите число -1.
+
+
+#Answer:
+norm = int(input())
+fi1 = 0
+fi2 = 1
+swap = 0
+fiN = 0
+i = 1
+while fiN != norm:
+    if fiN > norm:
+        print('-1')
+        break
+    fiN = fi1 + fi2
+    swap = fi1
+    fi1 = fi2
+    fi2 += swap
+    i += 1
+else:
+    print(i)
