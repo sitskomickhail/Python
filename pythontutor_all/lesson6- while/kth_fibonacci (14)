@@ -1,0 +1,24 @@
+#Task:
+#Последовательность Фибоначчи определяется так:
+#φ0 = 0,  φ1 = 1,  φn = φn−1 + φn−2.
+
+#По данному числу n определите n-е число Фибоначчи φn.
+
+#Эту задачу можно решать и циклом for.
+
+
+#Answer:
+norm = int(input())
+fi1 = 0
+fi2 = 1
+swap = 0
+fiN = 0
+for _ in range(norm - 1):
+    fiN = fi1 + fi2
+    swap = fi1
+    fi1 = fi2
+    fi2 += swap
+if norm == 1:
+    print('1')
+else:
+    print(fiN)
