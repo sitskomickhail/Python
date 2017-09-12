@@ -1,0 +1,12 @@
+#Task:
+#Определите количество четных элементов в последовательности, завершающейся числом 0.
+
+
+#Answer:
+num = int(input())
+quan = 0
+while num != 0:
+    if num % 2 == 0:
+        quan += 1
+    num = int(input())
+print(quan)
