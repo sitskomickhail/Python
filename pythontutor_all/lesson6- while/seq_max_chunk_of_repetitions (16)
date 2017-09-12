@@ -1,0 +1,22 @@
+#Task:
+#Дана последовательность натуральных чисел, завершающаяся числом 0. 
+#Определите, какое наибольшее число подряд идущих элементов этой последовательности равны друг другу
+
+
+#Answer:
+num = int(input())
+quan = 0
+quan_true = quan
+max_q = num
+while num != 0:
+    if num != max_q:
+        if quan_true < quan:
+            quan_true = quan
+        quan = 1
+        max_q = num
+    elif max_q == num:
+        quan += 1
+        if quan_true < quan:
+            quan_true = quan
+    num = int(input())
+print(quan_true)
