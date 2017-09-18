@@ -1,0 +1,7 @@
+#Task:
+#Напишите программу, которая приветствует пользователя, выводя слово Hello, введенное имя и знаки препинания по образцу:
+
+
+#Answer:
+name = str(input()) #input the word (desirable names)
+print('Hello, '+ name + '!') #printing the line
