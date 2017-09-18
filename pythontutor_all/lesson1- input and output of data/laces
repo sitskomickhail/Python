@@ -1,6 +1,0 @@
-dis_row = int(input()) #entering the distanse between rows
-dis_hole = int(input()) #entering the distanse between holes
-sizem = int(input()) #the size of empty hole
-holes = int(input()) #entering the quantity of holes
-
-print(2 *(dis_row + dis_hole) * (holes - 1) + 2 * sizem + dis_row) #printing the all size of hole
