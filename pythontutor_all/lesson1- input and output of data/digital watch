@@ -1,3 +1,0 @@
-clock = int(input()) #Enter the number in minutes
-
-print(clock // 60 % 24, clock % 60) #print (hours (include 00:), remaining minutes)
