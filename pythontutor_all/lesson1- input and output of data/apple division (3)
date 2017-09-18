@@ -1,0 +1,13 @@
+#Task:
+#n школьников делят k яблок поровну, неделящийся остаток остается в корзинке. Сколько яблок достанется каждому школьнику? 
+#Сколько яблок останется в корзинке? 
+#Программа получает на вход числа n и k и должна вывести искомое количество яблок (два числа).
+
+
+
+#Answer:
+n = int(input()) #Enter two numbers (num1 & num2)
+k = int(input())
+
+print(k // n) #print the number how much pupils will have apples
+print(k % n) #print the number how much apples will remain
