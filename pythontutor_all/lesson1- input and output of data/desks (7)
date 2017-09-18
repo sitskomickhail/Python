@@ -1,0 +1,14 @@
+#Task:
+#В школе решили набрать три новых математических класса. 
+#Так как занятия по математике у них проходят в одно и то же время, было решено выделить кабинет для каждого класса и купить в них новые парты. 
+#За каждой партой может сидеть не больше двух учеников. Известно количество учащихся в каждом из трёх классов. Сколько всего нужно закупить парт чтобы их хватило на всех учеников? 
+#Программа получает на вход три натуральных числа: количество учащихся в каждом из трех классов.
+
+
+#Answer:
+pup_num1 = int(input("Enter the number of pupils in first classroom: ")) #Entering the quantity of pupils (3 times)
+pup_num2 = int(input("Enter the number of pupils in second classroom: "))
+pup_num3 = int(input("Enter the number of pupils in third classroom: "))
+
+desks = pup_num1 + pup_num2 + pup_num3 #amount of all desks in all classes
+print(((pup_num1 + pup_num1 % 2) + (pup_num2 + pup_num2 % 2) + (pup_num3 + pup_num3 % 2)) // 2) #printing the answer
