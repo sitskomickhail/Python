@@ -1,0 +1,9 @@
+#Task:
+#Напишите программу, которая считывает целое число и выводит текст, аналогичный приведенному в примере (пробелы важны!).
+
+
+#Answer:
+num1 = int(input()) #input the number (num1)
+
+print ('The next number for the number', num1,'is',str(num1+1)+'.') #printing the text
+print ('The previous number for the number',num1,'is',str(num1-1)+'.') #printing the text
