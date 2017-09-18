@@ -1,5 +1,0 @@
-num1 = int(input())  #We entering three numbers (num1, num2 & num3)
-num2 = int(input())
-num3 = int(input())
-
-print(num1 + num2 + num3)  #then we print amount of theese numbers
