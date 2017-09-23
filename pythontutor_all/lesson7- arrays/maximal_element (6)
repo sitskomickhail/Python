@@ -1,0 +1,19 @@
+#Task:
+#Дан список чисел. 
+#Выведите значение наибольшего элемента в списке, а затем индекс этого элемента в списке. 
+#Если наибольших элементов несколько, выведите индекс первого из них.
+
+#Answer:
+a = [int(i) for i in input().split()]
+maxEl = a[0]
+maxIn = 0
+
+for _ in range(0, len(a)):
+    if a[_] == maxEl:
+        maxIn = 0
+        continue
+    elif a[_] > maxEl:
+        maxEl = a[_]
+        maxIn = _
+        
+print(maxEl, maxIn)
