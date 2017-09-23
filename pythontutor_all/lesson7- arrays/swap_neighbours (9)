@@ -1,0 +1,15 @@
+#Task:
+#Переставьте соседние элементы списка (A[0] c A[1], A[2] c A[3] и т. д.). 
+#Если элементов нечетное число, то последний элемент остается на своем месте.
+
+
+#Answer:
+s = [int (i) for i in input().split()]
+for i in range(0, len(s), 2):
+    if i == len(s) - 1:
+        break
+    swap = s[i]
+    s[i] = s[i + 1]
+    s[i + 1] = swap
+for i in range(len(s)):
+    print(s[i])
