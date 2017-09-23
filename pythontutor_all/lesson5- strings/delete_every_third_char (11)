@@ -1,0 +1,13 @@
+#Task:
+#Дана строка. 
+#Удалите из нее все символы, чьи индексы делятся на 3.
+
+
+#Answer:
+def f(s, n):
+    lst = list(s)
+    del lst[::n]
+    return ''.join(lst)
+    
+s = input()
+print(f(s, 3))
