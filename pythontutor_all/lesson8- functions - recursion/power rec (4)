@@ -1,0 +1,18 @@
+#Task:
+#Дано действительное положительное число a и целое неотрицательное число n. 
+#Вычислите an не используя циклы, возведение в степень через ** и функцию math.pow(), а используя рекуррентное соотношение an=a⋅an-1.
+
+
+#Answer:
+a = float(input())
+n = float(input())
+
+def power(a, n, res):
+    
+    if n == 0:
+        return 1
+    else:
+        return res * power(a, n - 1, res)
+
+res = a
+print(power(a, n, res))
